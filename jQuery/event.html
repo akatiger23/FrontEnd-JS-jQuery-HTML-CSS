@@ -1,0 +1,62 @@
+<!-- Akkad Alahmad -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+
+    <style>
+        #box{
+            width: 200px;
+            height:200px;
+            background-color: azure;
+            margin: 50px auto;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!--event is about ever change with clicke and button-->
+
+
+
+    <div id="putAButtonHere">
+
+         
+    </div>
+   
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            //dynamiklyyyyy 
+            
+            $(document).on("click","button",function(){
+                console.log("33333")
+            })
+ 
+
+            const $parent= $("#putAButtonHere");
+            $parent.html("<button> dynamik clicke here</button>")
+
+            /* $("button").on("click",function(){
+                console.log("this is clickable too")
+            })  */
+            /* $("button").click(function(){
+                console.log("I am clicked ")
+            }) */
+           
+        })
+
+        
+
+    </script>
+</body>
+
+</html>

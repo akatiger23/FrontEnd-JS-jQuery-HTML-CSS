@@ -1,0 +1,67 @@
+<!-- Akkad Alahmad -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+
+    <style>
+        .box{
+            width: 200px;
+            height:200px;
+            background-color: rgb(0, 0, 0);
+            margin: 50px auto;
+            
+        }
+        .blue{
+            background-color: blue;
+        }
+        .width-100{
+            width: 100%;
+        
+         }
+    </style>
+    
+
+    
+</head>
+
+<body>
+
+    <button class="remov">Remove Blue</button>
+    <button class="remove-width">Remove Width</button>
+    <div class="box blue width-100"></div>
+    
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
+    <script>
+     
+      $(document).ready(function(){
+
+        const $box=$(".box");
+        const $removblue=$(".remov")
+        const $removewidth=$(".remove-width")
+
+        $removblue.on("click",function(){
+            $box.removeClass("blue")
+        })
+
+        $removewidth.on("click",()=>{
+            $box.removeClass("width-100")
+        })
+
+        /* $("button").on("click",()=>{
+            $(".box").addClass("blue width-100")
+        }) */
+
+       }) 
+     
+    </script>
+</body>
+
+</html>

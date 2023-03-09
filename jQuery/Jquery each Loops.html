@@ -1,0 +1,68 @@
+<!-- Akkad Alahmad -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+
+    <style>
+        /* .box{
+            width: 200px;
+            height:200px;
+            background-color: black;
+            margin: 50px auto;
+            padding: 20px;
+            margin: 20px;
+            
+        } */
+        /*  .blue{
+            background-color: blue;
+        }
+        .width-100{
+            width: 100%;
+        
+         }  */
+
+         
+    </style>
+    
+
+    
+</head>
+
+<body>
+    <ul>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+
+    </ul>
+
+    
+    
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
+    <script>
+     
+      $(document).ready(function(){ 
+        $("li").each(function(index,element){  // index which one and element the complet line
+$(element).text(`${index}.new item here`)
+if(index==2){
+    $(element)
+.css("background-color","black")
+.css("color","white")
+
+
+}
+        })
+       }) 
+     
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!-- Akkad Alahmad -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+
+    <style>
+        #box{
+            width: 200px;
+            height:200px;
+            background-color: rgb(132, 139, 68);
+            margin: 50px auto;
+
+            
+
+        }
+    </style>
+</head>
+
+<body>
+    
+        <div id="box"></div>
+
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
+    <script>
+
+
+//   Hover we can do it in CSS 
+
+        $(document).ready(function(){
+
+           /*  $(select).on(eventname, function(){
+                .....................
+            }) */
+
+
+
+            $("#box")
+            .on("mouseenter", function(){
+            console.log("your mouse is hovering over this box")
+            
+            })
+            .on("mouseleave",function(){
+                console.log("count pleas")
+         })
+
+        })
+       
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!-- Akkad Alahmad -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+
+    <style>
+        #box{
+            width: 200px;
+            height:200px;
+            background-color: rgb(132, 139, 68);
+            margin: 50px auto;
+            display: none;
+
+            
+
+        }
+    </style>
+
+    
+</head>
+
+<body>
+    
+        
+ 
+    
+    <button id="clickme">Show this element </button>
+    <div id="box"></div>
+
+   
+   
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
+    <script>
+     
+     $(document).ready(function(){
+       $("#clickme").on("click",function(e){
+        e.preventDefault()
+        $("#box").show();
+
+       })
+       })
+     
+
+
+
+    </script>
+</body>
+
+</html>

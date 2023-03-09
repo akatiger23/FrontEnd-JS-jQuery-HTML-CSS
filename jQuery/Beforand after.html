@@ -1,0 +1,33 @@
+<!-- Akkad Alahmad -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+</head>
+<body>
+   
+    <div id="target">
+        Add Html befor and after
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
+   <script>
+     //$(".dev") // instead of document.querySelector
+    
+
+    //$(".dev") // instead of document.querySelector
+      $(document).ready(function(){
+     $("#target")
+     .before("<h3>Hello new script</h3>")
+     .after("<p> this is after Dont go </p>")
+        })
+
+
+   </script>
+</body>
+</html>

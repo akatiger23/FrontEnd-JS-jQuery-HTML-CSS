@@ -1,0 +1,69 @@
+
+
+<body>
+    <input style="
+          padding: 30px;
+          border-radius: 5px;
+          border: none;
+          box-shadow: 0px 0px 5px #d9d9d9;
+        " type="text" class="js-bg-color" />
+    <input style="
+          padding: 30px;
+          border-radius: 5px;
+          border: none;
+          box-shadow: 0px 0px 5px #d9d9d9;
+        " type="text" class="js-text-color" />
+    <input style="
+          padding: 30px;
+          border-radius: 5px;
+          border: none;
+          box-shadow: 0px 0px 5px #d9d9d9;
+        " type="text" class="js-font-size" />
+  
+    <h4>Current background color is: <span class="js-show-bg"></span></h4>
+    <h4>Current text color is: <span class="js-show-color"></span></h4>
+    <h4>Current font size is: <span class="js-show-size"></span></h4>
+    <style>
+      .btn {
+        padding: 20px;
+        border: none;
+        border-radius: 15px;
+        background-color: cadetblue;
+        font-weight: 900;
+        box-shadow: 0px 0px 7.5px cadetblue;
+        color: white;
+        cursor: pointer;
+      }
+    </style>
+  
+    <script>
+      let bgInput = document.querySelector(".js-bg-color");
+      let colorInput = document.querySelector(".js-text-color");
+      let fontInput = document.querySelector(".js-font-size");
+      let bgSpan = document.querySelector(".js-show-bg");
+      let colorSpan = document.querySelector(".js-show-color");
+      let fontSpan = document.querySelector(".js-show-size");
+  
+      function listenToBg(event) {
+        bgSpan.innerText = event.target.value;
+        bgSpan.style.backgroundColor = event.target.value;
+      }
+  
+      function listenToColor(event) {
+        colorSpan.innerText = event.target.value;
+        colorSpan.style.color = event.target.value;
+      }
+  
+      function listenToFont(event) {
+        if (fontSpan.length !== 0) {
+          fontSpan.innerText = event.target.value + "px";
+        }
+        fontSpan.style.fontSize = event.target.value + "px";
+      }
+      let bgValue = bgInput.addEventListener("keyup", listenToBg);
+      let colorValue = colorInput.addEventListener("keyup", listenToColor);
+      let fontValue = fontInput.addEventListener("keyup", listenToFont);
+    </script>
+    </h3>
+  
+  

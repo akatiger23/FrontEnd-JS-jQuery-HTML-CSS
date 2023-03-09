@@ -1,0 +1,44 @@
+<!-- Akkad Alahmad -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+</head>
+<body>
+    <h1 class="customClassName" id="customId">
+        Hello jQuery
+    </h1>
+
+    <h1> Our Custom title</h1>
+    <button class="custom-class"> this is a custom button</button>
+    <p class="custom-class"> Lorem dollar ist the</p>
+    <p id="customid">Lorem ipsum dolor sit amet consectetur, 
+        adipisicing elit. Delectus omnis magni
+    </p>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
+   <script>
+     //$(".dev") // instead of document.querySelector
+    $(document).ready(function(){
+        $("h1.customClassName").text("this was changed");
+    })
+
+    //$(".dev") // instead of document.querySelector
+      $(document).ready(function(){
+        //$("h1").text("changed also ");
+        //$("p").html(" <stong>This is bolded</strong>")
+        $("h1,p").text("changed again#2")
+        $("p.custom-class").text("changed#33")
+        $("p#customid").text("changed###444")
+        })
+
+
+   </script>
+</body>
+</html>
